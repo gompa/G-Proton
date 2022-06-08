@@ -1,7 +1,7 @@
 #!/bin/bash
-#cd ~/.steam/root/
-#mkdir -p compatibilityrools.d
-#cd ~/.steam/root/compatibilitytools.d
+cd ~/.steam/root/
+mkdir -p compatibilityrools.d
+cd ~/.steam/root/compatibilitytools.d
 downloadurl(){
 curl -s https://api.github.com/repos/gompa/G-Proton/releases | grep browser_download_url | head -n 1 | cut -d '"' -f 4
 }
